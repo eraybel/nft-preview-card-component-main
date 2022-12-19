@@ -1,0 +1,99 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+// COLORS
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$main-bg: hsl(217, 54%, 11%);
+$card-bg: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+// Body
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: $main-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.card {
+  width: 300px;
+  border-radius: 10px;
+  background-color: $card-bg;
+  padding: 1.5rem;
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .description {
+    color: $soft-blue;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  .icon-area {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.308);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+
+    .price {
+      display: flex;
+      color: $cyan;
+      gap: 5px;
+      letter-spacing: 1px;
+      align-items: center;
+    }
+    .days {
+      display: flex;
+      gap: 5px;
+      color: $soft-blue;
+      align-items: center;
+    }
+  }
+
+  .creator {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    gap: 10px;
+    img {
+      width: 36px;
+      border: 1px solid $white;
+      border-radius: 50%;
+    }
+    p {
+      color: $soft-blue;
+    }
+    span {
+      color: $white;
+    }
+  }
+}
+.main-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+image {
+  position: relative;
+}
